@@ -6,7 +6,7 @@ import sys
 from setuptools import setup
 from setuptools.command.install import install
 
-VERSION = "1.1.1"
+VERSION = "0.0.1"
 
 def readme():
     """print long description"""
@@ -30,9 +30,9 @@ class VerifyVersionCommand(install):
 setup(
     name='teleinfo',
     version=VERSION,
-    url='http://github.com/demikl/python-teleinfo',
-    author='Mickael Le Baillif',
-    author_email='mickael.le.baillif@gmail.com',
+    url='https://github.com/benlbrm/python-teleinfo',
+    author='benlbrm',
+    author_email='benlbrm',
     license='MIT',
     description='EDF Teleinfo frame acquisition',
     long_description=readme(),
@@ -55,6 +55,6 @@ setup(
         ]
     },
     cmdclass={
-        'verify': VerifyVersionCommand,
+        # 'verify': VerifyVersionCommand,
     }
 )

@@ -14,3 +14,10 @@
 ==================
 
 * auto upload to Pypi using Circle CI
+
+
+1.0.5 - 2020-03-31
+==================
+
+* Fork initial project
+* Add support for GCE teleinfo device

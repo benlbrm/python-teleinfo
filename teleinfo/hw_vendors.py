@@ -59,4 +59,10 @@ class UTInfo2(HW_serial_based):
     def read_char(self):
         return self._serial_port.read(1)
 
+class GCETeleinfo(HW_serial_based):
+    def __init__(self, port="/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A105GK76-if00-port0", *args, **kwargs):
+        super(GCETeleinfo, self).__init__(port, *args, **kwargs)
+
+    def read_char(self):
+        return self._serial_port.read(1)
 
